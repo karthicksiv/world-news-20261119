@@ -164,8 +164,6 @@ CARDS = [
      "Migrant boat capsizes off Senegal", ""),
 ]
 BRIEFS = [
-    (16, "AFRICA", "DAKAR",
-     "Senegal: one dead, dozens missing as a migrant boat capsizes en route to Spain."),
     (17, "EUROPE", "BRUSSELS",
      "The European Commission is hit by a large-scale cyberattack; data leakage unknown."),
     (18, "AMERICAS", "QUITO",
@@ -180,8 +178,6 @@ BRIEFS = [
      "Poland’s Tusk on the three-way summit: “God, protect us from such friends.”"),
     (23, "EUROPE", "PARIS",
      "Macron backs reopening “the question” of Ukraine’s NATO accession."),
-    (24, "EUROPE", "PARIS",
-     "French women mark their symbolic ‘unpaid’ day over the gender pay gap."),
     (25, "MIDDLE EAST", "TEHRAN",
      "Iran rejects the dirty-bomb and bio-weapons claims as disinformation."),
     (26, "WORLD", "VIENNA",
@@ -192,32 +188,20 @@ BRIEFS = [
      "Xi: nuclear weapons should be “comprehensively prohibited and completely destroyed.”"),
     (29, "ASIA-PACIFIC", "SHENZHEN",
      "Trump calls the ICC “out of control”; Putin remains under its warrant."),
-    (30, "AMERICAS", "WASHINGTON",
-     "Trump: the US will “see what happens” in the Iran war after 1 January."),
     (31, "MIDDLE EAST", "AT SEA",
      "The carrier USS George Washington leaves the Mideast for the Pacific; two remain."),
     (32, "AFRICA", "FREETOWN",
      "A West Africa integration summit signs four regional agreements."),
-    (33, "MIDDLE EAST", "BEIRUT",
-     "84 Syrian refugees return from Lebanon through a reopened crossing."),
     (34, "ASIA-PACIFIC", "SEOUL",
      "South Korea holds its college entrance exam under an AI-cheating crackdown."),
     (35, "AMERICAS", "MIAMI",
      "GTA VI’s first-day sales pass 17 million copies."),
-    (36, "EUROPE", "LYON",
-     "Beaujolais Nouveau arrives with a nighttime barrel parade."),
-    (37, "EUROPE", "PARIS",
-     "France will monitor YouTubers for political bias ahead of the 2027 election."),
     (38, "ASIA-PACIFIC", "DELHI",
      "India and Japan flag “economic coercion” and deepen defence ties."),
-    (39, "AFRICA", "ABUJA",
-     "Nigerian airstrikes kill 21 militants, the military says."),
     (40, "WORLD", "ANTALYA",
      "Tuvalu at COP31: “We are here for the survival of our people.”"),
     (41, "AMERICAS", "CALIFORNIA",
      "A Russian man is arrested for spying on Palantir staff over Ukraine support."),
-    (42, "ASIA-PACIFIC", "KUALA LUMPUR",
-     "Malaysia to end visa-free entry for Indians from January."),
     (43, "MIDDLE EAST", "GAZA",
      "Israel says airstrikes killed two Hamas platoon commanders."),
 ]
@@ -314,14 +298,14 @@ h1{font-family:'Bitstream Charter',Charter,Georgia,serif;font-weight:700;font-si
 .r4{grid-template-columns:repeat(4,1fr)}
 .card{background:#fffdf7;border:1px solid #b9b1a0;border-top:3px solid;overflow:hidden}
 .art{display:block;width:100%}
-.hero .art{height:48px}
+.hero .art{height:100px}
 .sm .art{height:28px}
 .tx{padding:2px 8px 4px}
 .kick{font-size:9.6px;font-weight:800;letter-spacing:1.1px;display:flex;align-items:center;gap:5px;white-space:nowrap}
 .n{display:inline-flex;align-items:center;justify-content:center;min-width:16px;height:16px;border-radius:8px;color:#fff;font-size:10px;letter-spacing:0;padding:0 3px}
 h2{font-family:'Bitstream Charter',Charter,Georgia,serif;font-weight:700;letter-spacing:-.2px}
-.hero h2{font-size:21.5px;line-height:23px;margin:2px 0 2px}
-.hero p{font-size:11.6px;line-height:14.2px;color:#2a2622}
+.hero h2{font-size:24px;line-height:26px;margin:2px 0 2px}
+.hero p{font-size:12.6px;line-height:15.2px;color:#2a2622}
 .sm h2{font-size:17px;line-height:18.4px;margin:1px 0 1px}
 .bot{display:grid;grid-template-columns:286px 1fr;gap:10px;flex:1;min-height:0}
 .map{background:#20364a;display:flex;flex-direction:column}
