@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Builds page.html: a one-page front page of the world's news for Thursday 19 November 2026.
+"""Builds page.html — the front page of the world's news for Thursday 19 November 2026.
 
-Three-tier structure: 3 leads with a one-sentence explanation, 11 medium cards, 28 one-line
-briefs. Illustrations carry at most one small label; the headlines tell the story. Palette is
-cream and ink with muted region markers, so the page reads as one composition at any size.
+The page is three tiers deep: three leads that each carry a one-sentence
+explanation, twelve smaller drawn cards, and twenty-eight one-line briefs
+beside a numbered world map. Nothing that matters is buried: the date is
+the largest thing on the page, the leads follow, everything else is
+texture. The drawings carry no words — the headlines do that — and the
+palette stays cream and ink with muted region markers so the whole thing
+reads as one composition, not a wall of tiles.
 """
 import html, sys
 
@@ -239,17 +243,23 @@ h1{font-family:'Bitstream Charter',Charter,Georgia,serif;font-weight:700;font-si
 .bar{display:flex;height:14px;font-size:9.3px;font-weight:800;letter-spacing:.6px;color:#fff}
 .bar span{display:flex;align-items:center;justify-content:center;white-space:nowrap}
 .nums{display:grid;grid-template-columns:repeat(6,1fr);border-bottom:2px solid #161412;padding:2px 0 2px;margin-bottom:4px}
-.nums div{text-align:center;padding:0 6px;border-left:1px solid #b9b1a0}.nums div:first-child{border-left:0}
+.nums div{text-align:center;padding:0 6px;border-left:1px solid #b9b1a0}
+.nums div:first-child{border-left:0}
 .nums b{display:block;font-family:'Bitstream Charter',Charter,Georgia,serif;font-size:18px;line-height:19px;color:#6e3129}
 .nums i{display:block;font-style:normal;font-size:9px;line-height:10.2px;color:#3d3832}
-.row{display:grid;gap:5px;margin-bottom:4px}.r3{grid-template-columns:repeat(3,1fr)}.r4{grid-template-columns:repeat(4,1fr)}
+.row{display:grid;gap:5px;margin-bottom:4px}
+.r3{grid-template-columns:repeat(3,1fr)}
+.r4{grid-template-columns:repeat(4,1fr)}
 .card{background:#fffdf7;border:1px solid #b9b1a0;border-top:3px solid;overflow:hidden}
-.art{display:block;width:100%}.hero .art{height:48px}.sm .art{height:28px}
+.art{display:block;width:100%}
+.hero .art{height:48px}
+.sm .art{height:28px}
 .tx{padding:2px 8px 4px}
 .kick{font-size:9.6px;font-weight:800;letter-spacing:1.1px;display:flex;align-items:center;gap:5px;white-space:nowrap}
 .n{display:inline-flex;align-items:center;justify-content:center;min-width:16px;height:16px;border-radius:8px;color:#fff;font-size:10px;letter-spacing:0;padding:0 3px}
 h2{font-family:'Bitstream Charter',Charter,Georgia,serif;font-weight:700;letter-spacing:-.2px}
-.hero h2{font-size:21.5px;line-height:23px;margin:2px 0 2px}.hero p{font-size:11.6px;line-height:14.2px;color:#2a2622}
+.hero h2{font-size:21.5px;line-height:23px;margin:2px 0 2px}
+.hero p{font-size:11.6px;line-height:14.2px;color:#2a2622}
 .sm h2{font-size:17px;line-height:18.4px;margin:1px 0 1px}
 .bot{display:grid;grid-template-columns:286px 1fr;gap:10px;flex:1;min-height:0}
 .map{background:#20364a;display:flex;flex-direction:column}
@@ -261,8 +271,7 @@ h2{font-family:'Bitstream Charter',Charter,Georgia,serif;font-weight:700;letter-
 .cols b{font-weight:800;letter-spacing:.2px}
 .chk{border:2px solid #6e3129;background:#fffdf7;font-size:9.6px;line-height:11.8px;padding:3px 8px;margin-top:4px}
 .chk b{color:#6e3129;letter-spacing:1px}
-.ft{font-size:8.8px;line-height:10.6px;color:#4a443d;margin-top:2px;white-space:nowrap}
-"""
+.ft{font-size:8.8px;line-height:10.6px;color:#4a443d;margin-top:2px;white-space:nowrap}"""
 
 total = len(ALL)
 PAGE = f"""<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head><body><div class="pg">
