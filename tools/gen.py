@@ -108,6 +108,11 @@ ART[13] = ('<rect width="300" height="96" fill="#e7e2d6"/>'
            + '<path d="M24 80 L84 64 L144 68 L204 44 L264 30" fill="none" stroke="#8f3a32" stroke-width="4"/>'
              '<polygon points="264,30 250,28 258,42" fill="#8f3a32"/>'
            + '<circle cx="84" cy="64" r="4" fill="#5a5244"/><circle cx="144" cy="68" r="4" fill="#5a5244"/><circle cx="204" cy="44" r="4" fill="#5a5244"/>')
+ART[15] = ('<rect width="300" height="96" fill="#d7dde2"/>'
+          + ''.join(f'<path d="M0 {y} Q75 {y-4} 150 {y} T300 {y}" fill="none" stroke="#b7c2ba" stroke-width="1.6"/>' for y in (58, 72, 86))
+          + '<path d="M60 58 Q90 40 120 58 T180 58 T240 58" fill="none" stroke="#5a5244" stroke-width="3"/>'
+            '<polygon points="118,52 112,62 124,62" fill="#5a5244"/>'
+            '<circle cx="150" cy="44" r="5" fill="#c88a2e"/><circle cx="176" cy="38" r="4" fill="#c88a2e"/><circle cx="164" cy="52" r="3" fill="#c88a2e"/>')
 ART[14] = ('<rect width="300" height="96" fill="#3b2a20"/><rect x="92" y="8" width="116" height="80" fill="#c9a23a"/><rect x="101" y="17" width="98" height="62" fill="#1f3f7a"/>'
            '<g fill="none" stroke="#ffd84d" stroke-width="3" stroke-linecap="round"><path d="M112 36 q8 -10 16 0 t16 0"/><path d="M150 30 q8 -10 16 0 t16 0"/><path d="M118 52 q8 -10 16 0 t16 0"/></g>'
            '<circle cx="182" cy="56" r="9" fill="#ffd84d"/><path d="M101 79 L120 62 L136 72 L156 58 L199 79 Z" fill="#274f2a"/>'
@@ -137,36 +142,37 @@ CARDS = [
     (12, "EUROPE", "COPENHAGEN · ARCTIC", "Denmark ratifies Greenland security deal", ""),
     (13, "AMERICAS", "WASHINGTON · ECONOMY", "IMF: AI demand will push up interest rates", ""),
     (14, "AMERICAS", "ART · AUCTION", "Van Gogh sells for a record $190.4m", ""),
+    (15, "AFRICA", "DAKAR · MIGRATION", "Migrant boat capsizes off Senegal", ""),
 ]
 BRIEFS = [
-    (15, "AFRICA", "DAKAR", "Senegal: one dead, dozens missing as a migrant boat capsizes en route to Spain."),
-    (16, "EUROPE", "BRUSSELS", "The European Commission is hit by a large-scale cyberattack; data leakage unknown."),
-    (17, "AMERICAS", "QUITO", "Hegseth lands in Ecuador on an anti-narcotics tour; a Venezuela pact is announced."),
-    (18, "WORLD", "DEEP SPACE", "Voyager 1, 25.9 billion km away, still works almost 50 years after launch."),
-    (19, "AFRICA", "NAIROBI", "Kenya discharges its last Ebola patient; no community transmission recorded."),
-    (20, "ASIA-PACIFIC", "SHENZHEN", "Japan’s PM Takaichi holds talks with Putin on the summit’s sidelines."),
-    (21, "EUROPE", "WARSAW", "Poland’s Tusk on the three-way summit: “God, protect us from such friends.”"),
-    (22, "EUROPE", "PARIS", "Macron backs reopening “the question” of Ukraine’s NATO accession."),
-    (23, "EUROPE", "PARIS", "French women mark their symbolic ‘unpaid’ day over the gender pay gap."),
-    (24, "MIDDLE EAST", "TEHRAN", "Iran rejects the dirty-bomb and bio-weapons claims as disinformation."),
-    (25, "WORLD", "VIENNA", "The US, UK, France and Germany press Iran at the IAEA to resume inspections."),
-    (26, "MIDDLE EAST", "BAGHDAD", "Iraqi forces deploy into a Kataib Hezbollah stronghold under a deal."),
-    (27, "ASIA-PACIFIC", "SHENZHEN", "Xi: nuclear weapons should be “comprehensively prohibited and completely destroyed.”"),
-    (28, "ASIA-PACIFIC", "SHENZHEN", "Trump calls the ICC “out of control”; Putin remains under its warrant."),
-    (29, "AMERICAS", "WASHINGTON", "Trump: the US will “see what happens” in the Iran war after 1 January."),
-    (30, "MIDDLE EAST", "AT SEA", "The carrier USS George Washington leaves the Mideast for the Pacific; two remain."),
-    (31, "AFRICA", "FREETOWN", "A West Africa integration summit signs four regional agreements."),
-    (32, "MIDDLE EAST", "BEIRUT", "84 Syrian refugees return from Lebanon through a reopened crossing."),
-    (33, "ASIA-PACIFIC", "SEOUL", "South Korea holds its college entrance exam under an AI-cheating crackdown."),
-    (34, "AMERICAS", "MIAMI", "GTA VI’s first-day sales pass 17 million copies."),
-    (35, "EUROPE", "LYON", "Beaujolais Nouveau arrives with a nighttime barrel parade."),
-    (36, "EUROPE", "PARIS", "France will monitor YouTubers for political bias ahead of the 2027 election."),
-    (37, "ASIA-PACIFIC", "DELHI", "India and Japan flag “economic coercion” and deepen defence ties."),
-    (38, "AFRICA", "ABUJA", "Nigerian airstrikes kill 21 militants, the military says."),
-    (39, "WORLD", "ANTALYA", "Tuvalu at COP31: “We are here for the survival of our people.”"),
-    (40, "AMERICAS", "CALIFORNIA", "A Russian man is arrested for spying on Palantir staff over Ukraine support."),
-    (41, "ASIA-PACIFIC", "KUALA LUMPUR", "Malaysia to end visa-free entry for Indians from January."),
-    (42, "MIDDLE EAST", "GAZA", "Israel says airstrikes killed two Hamas platoon commanders."),
+    (16, "AFRICA", "DAKAR", "Senegal: one dead, dozens missing as a migrant boat capsizes en route to Spain."),
+    (17, "EUROPE", "BRUSSELS", "The European Commission is hit by a large-scale cyberattack; data leakage unknown."),
+    (18, "AMERICAS", "QUITO", "Hegseth lands in Ecuador on an anti-narcotics tour; a Venezuela pact is announced."),
+    (19, "WORLD", "DEEP SPACE", "Voyager 1, 25.9 billion km away, still works almost 50 years after launch."),
+    (20, "AFRICA", "NAIROBI", "Kenya discharges its last Ebola patient; no community transmission recorded."),
+    (21, "ASIA-PACIFIC", "SHENZHEN", "Japan’s PM Takaichi holds talks with Putin on the summit’s sidelines."),
+    (22, "EUROPE", "WARSAW", "Poland’s Tusk on the three-way summit: “God, protect us from such friends.”"),
+    (23, "EUROPE", "PARIS", "Macron backs reopening “the question” of Ukraine’s NATO accession."),
+    (24, "EUROPE", "PARIS", "French women mark their symbolic ‘unpaid’ day over the gender pay gap."),
+    (25, "MIDDLE EAST", "TEHRAN", "Iran rejects the dirty-bomb and bio-weapons claims as disinformation."),
+    (26, "WORLD", "VIENNA", "The US, UK, France and Germany press Iran at the IAEA to resume inspections."),
+    (27, "MIDDLE EAST", "BAGHDAD", "Iraqi forces deploy into a Kataib Hezbollah stronghold under a deal."),
+    (28, "ASIA-PACIFIC", "SHENZHEN", "Xi: nuclear weapons should be “comprehensively prohibited and completely destroyed.”"),
+    (29, "ASIA-PACIFIC", "SHENZHEN", "Trump calls the ICC “out of control”; Putin remains under its warrant."),
+    (30, "AMERICAS", "WASHINGTON", "Trump: the US will “see what happens” in the Iran war after 1 January."),
+    (31, "MIDDLE EAST", "AT SEA", "The carrier USS George Washington leaves the Mideast for the Pacific; two remain."),
+    (32, "AFRICA", "FREETOWN", "A West Africa integration summit signs four regional agreements."),
+    (33, "MIDDLE EAST", "BEIRUT", "84 Syrian refugees return from Lebanon through a reopened crossing."),
+    (34, "ASIA-PACIFIC", "SEOUL", "South Korea holds its college entrance exam under an AI-cheating crackdown."),
+    (35, "AMERICAS", "MIAMI", "GTA VI’s first-day sales pass 17 million copies."),
+    (36, "EUROPE", "LYON", "Beaujolais Nouveau arrives with a nighttime barrel parade."),
+    (37, "EUROPE", "PARIS", "France will monitor YouTubers for political bias ahead of the 2027 election."),
+    (38, "ASIA-PACIFIC", "DELHI", "India and Japan flag “economic coercion” and deepen defence ties."),
+    (39, "AFRICA", "ABUJA", "Nigerian airstrikes kill 21 militants, the military says."),
+    (40, "WORLD", "ANTALYA", "Tuvalu at COP31: “We are here for the survival of our people.”"),
+    (41, "AMERICAS", "CALIFORNIA", "A Russian man is arrested for spying on Palantir staff over Ukraine support."),
+    (42, "ASIA-PACIFIC", "KUALA LUMPUR", "Malaysia to end visa-free entry for Indians from January."),
+    (43, "MIDDLE EAST", "GAZA", "Israel says airstrikes killed two Hamas platoon commanders."),
 ]
 ALL = [(n, r) for n, r, *_ in HERO] + [(n, r) for n, r, *_ in CARDS] + [(n, r) for n, r, *_ in BRIEFS]
 COUNT = {r: sum(1 for _, x in ALL if x == r) for r in REG}
@@ -177,7 +183,7 @@ NUMS = [("3", "leaders at one table — a first"), ("9–6", "the World Court’
         ("Day 265", "of the Iran war"), ("3rd", "strike on the Crimean Bridge in four days")]
 
 # --- map --------------------------------------------------------------------------------------------
-MW, MH = 262, 148
+MW, MH = 286, 158
 def xy(lon, lat):
     return (lon + 170) / 350 * MW, (78 - lat) / 136 * MH
 LAND = [
@@ -190,11 +196,11 @@ LAND = [
     [(172, -35), (178, -38), (171, -46), (167, -45)], [(131, 32), (141, 36), (142, 44), (136, 36)], [(-6, 50), (1, 52), (-3, 58), (-6, 56)],
     [(96, 5), (106, -6), (118, -8), (117, 4), (104, 1)], [(-50, 60), (-22, 70), (-30, 78), (-60, 78)],
 ]
-PINS = {1: (114, 22.5), 2: (4.3, 52), 3: (-74, 40.7), 4: (46.7, 24.7), 5: (57, 26.2), 6: (-77, 39), 7: (34.4, 31.4),
-       8: (13.4, 52.5), 9: (36.5, 45.3), 10: (30.7, 36.9), 11: (84.9, 19.3), 12: (12.6, 55.7), 13: (-77, 40.5), 14: (73.9, 40.7)}
-NUDGE = {2: (-7, -4), 12: (6, -6), 6: (-6, 4), 9: (7, -3), 5: (7, 5), 13: (6, -3), 11: (6, -5)}
+PINS = {1: (114, 22.5), 2: (1, 49), 3: (-70, 42.5), 4: (46.7, 24.7), 5: (57, 26.2), 6: (-80, 37.5), 7: (34.4, 31.4),
+       8: (14.5, 50), 9: (37.5, 44), 10: (31.5, 38.5), 11: (84.9, 19.3), 12: (10, 57.5), 13: (-73, 44), 15: (-17.6, 14.8)}
+NUDGE = {1: (7, 2), 9: (8, -4), 10: (-8, 5), 11: (7, -5), 3: (7, -3), 6: (-7, 4)}
 DOTS = [(178, -18), (174, -41), (101.7, 3), (45, 15), (127, 37.5), (-80, 26), (-122, 37), (18, 2), (139.7, 35.7),
-       (2.4, 6.5), (37, 55), (21, 52), (4.9, 7.5), (-78.5, 0), (12.1, 8), (3.4, 6.4), (77, 28), (135, -25)]
+       (37, 55), (21, 52), (4.9, 7.5), (-78.5, 0), (12.1, 8), (3.4, 6.4), (77, 28), (135, -25), (-9.5, 12.3)]
 def worldmap():
     s = f'<svg viewBox="0 0 {MW} {MH}" width="{MW}" height="{MH}"><rect width="{MW}" height="{MH}" fill="#20364a"/>'
     for poly in LAND:
@@ -205,8 +211,8 @@ def worldmap():
     rof = {n: r for n, r in ALL}
     for n, (lon, lat) in PINS.items():
         x, y = xy(lon, lat); dx, dy = NUDGE.get(n, (0, 0)); x += dx; y += dy
-        s += (f'<circle cx="{x:.1f}" cy="{y:.1f}" r="7" fill="{REG[rof[n]]}" stroke="#fff" stroke-width="1.2"/>'
-              f'<text x="{x:.1f}" y="{y + 3:.1f}" text-anchor="middle" font-family="Inter" font-weight="800" font-size="8.5" fill="#fff">{n}</text>')
+        s += (f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6" fill="{REG[rof[n]]}" stroke="#fff" stroke-width="1.2"/>'
+              f'<text x="{x:.1f}" y="{y + 3:.1f}" text-anchor="middle" font-family="Inter" font-weight="800" font-size="8" fill="#fff">{n}</text>')
     return s + '</svg>'
 
 # --- page -------------------------------------------------------------------------------------------
@@ -228,24 +234,24 @@ html,body{width:1024px;height:1024px;background:#f6f1e4;color:#161412;font-famil
 .pg{position:absolute;inset:0;padding:10px 16px 8px;display:flex;flex-direction:column}
 .top{display:flex;justify-content:space-between;font-size:11px;font-weight:800;letter-spacing:2.2px;border-bottom:3px solid #161412;padding-bottom:3px}
 .top span:first-child{color:#8f3a32}
-h1{font-family:'Bitstream Charter',Charter,Georgia,serif;font-weight:700;font-size:57px;line-height:62px;letter-spacing:-1.6px;margin-top:0;white-space:nowrap}
+h1{font-family:'Bitstream Charter',Charter,Georgia,serif;font-weight:700;font-size:54px;line-height:58px;letter-spacing:-1.6px;margin-top:0;white-space:nowrap}
 .deck{font-family:'Bitstream Charter',Charter,Georgia,serif;font-style:italic;font-size:16px;color:#6e3129;margin:1px 0 4px}
-.bar{display:flex;height:15px;font-size:9.3px;font-weight:800;letter-spacing:.6px;color:#fff}
+.bar{display:flex;height:14px;font-size:9.3px;font-weight:800;letter-spacing:.6px;color:#fff}
 .bar span{display:flex;align-items:center;justify-content:center;white-space:nowrap}
 .nums{display:grid;grid-template-columns:repeat(6,1fr);border-bottom:2px solid #161412;padding:2px 0 2px;margin-bottom:4px}
 .nums div{text-align:center;padding:0 6px;border-left:1px solid #b9b1a0}.nums div:first-child{border-left:0}
-.nums b{display:block;font-family:'Bitstream Charter',Charter,Georgia,serif;font-size:19px;line-height:20px;color:#6e3129}
-.nums i{display:block;font-style:normal;font-size:9.2px;line-height:10.6px;color:#3d3832}
-.row{display:grid;gap:5px;margin-bottom:5px}.r3{grid-template-columns:repeat(3,1fr)}.r4{grid-template-columns:repeat(4,1fr)}
+.nums b{display:block;font-family:'Bitstream Charter',Charter,Georgia,serif;font-size:18px;line-height:19px;color:#6e3129}
+.nums i{display:block;font-style:normal;font-size:9px;line-height:10.2px;color:#3d3832}
+.row{display:grid;gap:5px;margin-bottom:4px}.r3{grid-template-columns:repeat(3,1fr)}.r4{grid-template-columns:repeat(4,1fr)}
 .card{background:#fffdf7;border:1px solid #b9b1a0;border-top:3px solid;overflow:hidden}
-.art{display:block;width:100%}.hero .art{height:54px}.sm .art{height:38px}
-.tx{padding:3px 8px 5px}
-.kick{font-size:9.3px;font-weight:800;letter-spacing:1.2px;display:flex;align-items:center;gap:5px;white-space:nowrap}
+.art{display:block;width:100%}.hero .art{height:48px}.sm .art{height:28px}
+.tx{padding:2px 8px 4px}
+.kick{font-size:9.6px;font-weight:800;letter-spacing:1.1px;display:flex;align-items:center;gap:5px;white-space:nowrap}
 .n{display:inline-flex;align-items:center;justify-content:center;min-width:16px;height:16px;border-radius:8px;color:#fff;font-size:10px;letter-spacing:0;padding:0 3px}
 h2{font-family:'Bitstream Charter',Charter,Georgia,serif;font-weight:700;letter-spacing:-.2px}
-.hero h2{font-size:20.5px;line-height:22px;margin:2px 0 2px}.hero p{font-size:11.4px;line-height:14px;color:#2a2622}
-.sm h2{font-size:14.2px;line-height:15.6px;margin:1px 0 1px}
-.bot{display:grid;grid-template-columns:252px 1fr;gap:10px;flex:1;min-height:0}
+.hero h2{font-size:21.5px;line-height:23px;margin:2px 0 2px}.hero p{font-size:11.6px;line-height:14.2px;color:#2a2622}
+.sm h2{font-size:17px;line-height:18.4px;margin:1px 0 1px}
+.bot{display:grid;grid-template-columns:286px 1fr;gap:10px;flex:1;min-height:0}
 .map{background:#20364a;display:flex;flex-direction:column}
 .map h3{color:#fff;font-size:10.2px;letter-spacing:1.8px;font-weight:800;padding:4px 8px 2px}
 .map small{color:#c9d6e2;font-size:9.2px;line-height:11.2px;padding:2px 8px 6px;display:block}
